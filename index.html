@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nabeel's portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #e1ff39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(46, 119, 141);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #302ea5;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Nabeel Syed Asif</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/itguy2.png)">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Nabeel Syed Asif</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Customer centric ',
+						' Innovative ',
+						'  Strategic ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+						<br>
+			            <h1><strong>Business Development manager</strong></h1>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/nabeel-syed-asif-7797962b5/" class=" btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Nabeel Syed Asif</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Business Development manager</span></p>
+										<p><span class="title-s">Experience: </span> <span>3 Years 3 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Hyderabad, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s mt-4"><strong>Skills</strong></p>
+									<span>Customer Service</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Powerpoint</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+								<span>Project management</span> <span class="pull-right">60%</span> -->
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Market research</span> <span class="pull-right">50%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Customer relationship management(CRM) software</span> <span class="pull-right">55%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>As a business administrator, I have successfully managed and coordinated multiple projects, teams, and budgets, while ensuring quality and efficiency.”</p>
+
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Business Developer &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Entrepreneurship,Ecommerce,Customer support &amp; Digital Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor's in Business Administration</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Observation,Decision making,Conflict resolution,Problem solving &amp; Adaptability.</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling,Sight seeing,Exploring</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="5">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/nabeel-syed-asif-" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>A versatile and professional individual with over three years of experience in business administration and computer applications. Skilled in managing office operations, developing and maintaining databases, creating reports and presentations, and providing excellent customer service. Demonstrated ability to work independently and collaboratively, solve problems creatively, and communicate effectively. Seeking to leverage my expertise and contribute to the success of a dynamic organization.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2021-Present</span>
+					<h2>Business Development Associate</h2>
+					<span class="position">Mehraan Multicuisine Restaurant</span>
+					<p class="mt-4">Mehraan Multicuisine Restaurant located at Royal Colony,Kanchanbagh,Balapur,Hyderabad,Telangana 500058.It is a family restaurant which specialises in Cuisines like Indian,Mughlai,Chinese and Arabian.As one of the Main and attractive restaurant in the area,Mehraan restaurant offers best Irani Tea in Balapur.With meals available at Affordable prices, It also provides main course dishes at affordable and competetive prices.It has an employee base of 10.
+						<ul>
+							<li>My journey from a customer support professional at Amazon to successfully launch a Restaurant Business with my father has been a fulfilling and transformative experience. My role outlines my entrepreneurial endeavors, focusing on the construction and successful management of my restaurant.
+								.</li>
+							<li>*Construction Phase:*
+								I undertook the entire construction process of the restaurant, overseeing every aspect from conceptualization to execution. This included:
+								- Designing the layout and interiors to create an inviting ambiance that aligns with the restaurant's concept.
+								- Managing the construction of the kitchen area, ensuring optimal functionality and adherence to safety standards.
+								- Coordinating plumbing and electrical work to facilitate seamless operations.
+								- Supervising the installation of equipment and fixtures to enhance efficiency and aesthetics.
+								</li>
+							<li>Entrepreneurial Strategies:*
+								Throughout the construction phase, I employed various entrepreneurial strategies to ensure the success of the venture:
+								- Emphasizing quality and attention to detail in every aspect of the restaurant's design and construction.
+								- Prioritizing efficiency and cost-effectiveness to maximize resources and optimize the budget.
+								- Leveraging my customer support experience to anticipate and address potential challenges proactively</li>
+							<li>Successful Operation:*
+								Since its inception, the restaurant has been thriving under my leadership. Key highlights of its successful operation include:
+								- Curating a diverse menu that caters to varying tastes and dietary preferences, ensuring a memorable dining experience for patrons.
+								- Implementing effective marketing and promotional campaigns to attract a loyal customer base and drive revenue growth.
+								- Nurturing a skilled and dedicated team, fostering a culture of excellence and teamwork to deliver exceptional service.
+								- Soliciting feedback from customers and continually refining operations to exceed expectations and stay ahead of industry trends.</li>
+						</ul>
+					</p>
+				</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022-2023</span>
+						<h2>Concession Abuse Prevention(CAP) Associate</h2>
+						<span class="position">Amazon Development centre HYD</span>
+						<p class="mt-4">Amazon,is an American multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence. It is considered one of the Big Five American technology companies.Amazon engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally. The company operates through three segments: North America, International, and Amazon Web Services (AWS).
+							<ul>
+								<li>As a CAP Associate I Worked within a team which specialises in Preventing concession abuse by customers and drivers to ensure safe environment and trust.</li>
+								<li>Liaise with other deparments such as customer service,payment teams,Merchant investigation as required to prevent concession abuse.</li>
+								<li>Seeking solutions through logical reasoning and Data interpretation skills and identifies trends to appropriate channels including improvement suggestions.</li>
+								<li>Demonstrating excellent time-management skills and ability to work independently while using departmental resources,Policies and procedures.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+				
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2018-2019</span>
+						<h2>Customer and Driver support specialist</h2>
+						<span class="position">Swiggy(Bundle Technologies),Amazon Development centre,Hyd</span>
+						<p class="mt-4">Swiggy,It is India’s leading on-demand delivery platform with a tech-first approach to logistics and a solution-first approach to consumer demands. With a presence in 500 cities across India, partnerships with hundreds of thousands of restaurants, an employee base of over 5000, a 2 lakh+ strong independent fleet of Delivery Executives, It delivers unparalleled convenience driven by continuous innovation.
+ 
+							<ul>
+								<li>Driver support demonstrates efficient service to swiggy drivers helping them deliver the food orders effectively.</li>
+								<li>Guiding drivers at their issues regarding customer orders,location problems,App assistance,payments etc.</li>
+								<li>Maintaining a positive and professional demeanor always portraying the company in a positive light and effectively managing sensitive issues.</li>
+								<li>Maintains acceptable performance metrics such as quality,productivity,first contact resolution and attendance.</li>
+								<li>Liaise with other departments such as customer service,payment teams to resolve driver issues and queries.</li>
+							</ul>
+						</p>
+					</div>
+                    
+				  </div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2024</span>
+    					<h2>Bachelor's in Business Administration</h2>
+    					<span class="position">Osmania University</span>
+    					<p class="mt-4">Grade: CGPA 7.8 in Last Semester</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2021</span>
+    					<h2>Bachelor's in Computer Science</h2>
+    					<span class="position">Osmania University</span>
+    					<p class="mt-4">Dropped out,with positive impact on my Digital literacy.</p>
+    				</div>
+				</div>
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2015-2017</span>
+    					<h2>Senior High School</h2>
+    					<span class="position">Narayana Junior College</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1XcQuejBlITuyu3i4xvluKMLjQ9ge_pP4/view?usp=drive_link" class="btn btn-primary py-4 px-5">CLick to Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects & Achievements</h2>
+            <p><strong>Below are some of the Images of my Project Completetion and Achievements</strong></p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://drive.google.com/file/d/1JycdxDESGyaz3s0MgxqFxa3qnias8Hmq/view?usp=drive_link" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://drive.google.com/file/d/1JycdxDESGyaz3s0MgxqFxa3qnias8Hmq/view?usp=drive_link">Mehraan restaurant located at Balapur,Hyderabad</a></h3>
+                <p>Front facing of Mehraan restaurant.Designed as per Local Market standards this place offers best in class meals,Irani Tea and Hyderabadi Dum Biryani. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://drive.google.com/file/d/1zjcyE4S7D4BkBZElqA_faBhTMxyLcqYg/view?usp=drive_link" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://drive.google.com/file/d/1zjcyE4S7D4BkBZElqA_faBhTMxyLcqYg/view?usp=drive_link">Ground floor of Mehraan restaurant.</a></h3>
+                <p>Ground floor is designed as Basic section for Tea and Snacks. With minimal spending on interiors, It is designed as per Local Market standards. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://drive.google.com/file/d/1FdXrnmwLjtpa0attKu4FI00VX1x9cR-h/view?usp=drive_link" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://drive.google.com/file/d/1FdXrnmwLjtpa0attKu4FI00VX1x9cR-h/view?usp=drive_link">Staircase to first floor.</a></h3>
+                <p>Stair case to first floor which is Designed as family section or premium section of the restaurant.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://drive.google.com/file/d/10ZO6dY_cl9RgScMwx2Rf5zJCGntP36df/view?usp=drive_link" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/10ZO6dY_cl9RgScMwx2Rf5zJCGntP36df/view?usp=drive_link">First floor of the Restaurant.</a></h3>
+				  <p>First floor of the restaurant, which is designed for families is a premium section of the Restaurant.With Amient lighting and well designed interiors, it creates a welcoming atmosphere and enhance the Dining experience.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://drive.google.com/file/d/1idxncWZN-ZNexlxjqia9B3EGEH5rYeWv/view?usp=drive_link" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1idxncWZN-ZNexlxjqia9B3EGEH5rYeWv/view?usp=drive_link">Family Section</a></h3>
+				  <p>Booths with larger tables to accomodate families and Quiet Ambience to enchance Dining experience. </p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://drive.google.com/file/d/1M0srctddR6ocdDUeIAJJGd_xJyUQjj2_/view?usp=drive_link" class="block-20 zoom-effect" style="background-image: url('images/proj_6.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1M0srctddR6ocdDUeIAJJGd_xJyUQjj2_/view?usp=drive_link">Second Floor as a Kitchen</a></h3>
+				  <p>Kitchen Setup as per Market standards for safety and hygiene, Licensed by FSSAI.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://drive.google.com/file/d/1pcUVF4bT1EVojRZzckxrqSTkqmf5NJAq/view?usp=drive_link" class="block-20 zoom-effect" style="background-image: url('images/proj_7.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1pcUVF4bT1EVojRZzckxrqSTkqmf5NJAq/view?usp=drive_link">Letter of Appreciation</a></h3>
+				  <p>Letter of Appreciation from SDS Sr operations Manager at Amazon India.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://drive.google.com/file/d/1zIPNjqfZZreTShmMA6stvYjVNhWjCIK5/view?usp=drive_link" class="block-20 zoom-effect" style="background-image: url('images/proj_8.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1zIPNjqfZZreTShmMA6stvYjVNhWjCIK5/view?usp=drive_link">Letter of Appreciation</a></h3>
+				  <p>Letter of Appreciation from SDS General Manager at Amazon.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://drive.google.com/file/d/1L1n2c-6j2ztu9zOrKzyHJgbfOyZBonvJ/view?usp=drive_link" class="block-20 zoom-effect" style="background-image: url('images/proj_9.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1L1n2c-6j2ztu9zOrKzyHJgbfOyZBonvJ/view?usp=drive_link">Completion of Office Assistant Training</a></h3>
+				  <p>Certificate for Completion of Office assistant training with Grade A. </p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://drive.google.com/file/d/1-BINnkxVlHrG0DpcY-Xf-E9ZyqWGP75c/view?usp=drive_link" class="block-20 zoom-effect" style="background-image: url('images/proj_10.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1-BINnkxVlHrG0DpcY-Xf-E9ZyqWGP75c/view?usp=drive_link">Certificate of Completion</a></h3>
+				  <p>Certificate for Completion of training in Karate and Self Defence. </p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://drive.google.com/file/d/1dOLGk4p0jPg8SZEb9CHjLEuHJn52LoLh/view?usp=drive_link" class="block-20 zoom-effect" style="background-image: url('images/proj_11.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1dOLGk4p0jPg8SZEb9CHjLEuHJn52LoLh/view?usp=drive_link">Certificate of Appreciation at <strong>State Muay Thai Championship</strong></a></h3>
+				  <p>Certificate of Appreciation for winning silver medal in Telangana State Muay thai Championship.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+				
+                <strong class="number" data-number="10">0</strong> <strong>+</strong>
+				<span>&nbsp;Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="3">0</strong> <strong>+</strong>
+                <span>Years of Work experience</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">1</strong> <strong>+</strong>
+                <span>Miles walked</span>
+			  </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="100">0</strong>&nbsp; <strong>+</strong>
+                <span> Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme ftco-animate img margin-top" style="background-image: url(images/bg_1.jpg)">
+			 <!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-section text-center">
+						<h1><h2><span>I love to solve business problems & uncover hidden data stories </span></h2></h1>
+						<div class="mb-4 mt-4">
+						 <h1> <strong>>For more Insights, Please check my</strong></h1> <h2><strong>LinkedIn</strong> </h2>
+						<br>
+						<br>
+						<p><a href="https://www.linkedin.com/in/nabeel-syed-asif-" class="btn btn-primary py-3 px-5">LinkedIn</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Hyderabad, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number & Whatsapp</h3>
+	            <p><a href="tel://0101010101">+91 9346397691</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:nabilasif2020@gmail.com">nabilasif2020@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1XcQuejBlITuyu3i4xvluKMLjQ9ge_pP4/view?usp=drive_link">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/RugYCSWkHTcC15RY6" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <!-- <li class="ftco-animate"><a href="https://"><span class="icon-youtube"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/nabeel-syed-asif-7797962b5/"><span class="icon-linkedin"></span></a></li>  
+					  <!-- <li class="ftco-animate"><a href="https"><span class="icon-twitter"></span></a></li> -->
+					  <!-- <li class="ftco-animate"><a href="https:"></span></a></li> -->
+				      <!-- <li class="ftco-animate"><a href="https:"><span class="icon-instagram"></span></a></li> -->
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
